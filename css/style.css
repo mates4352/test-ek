@@ -382,7 +382,8 @@ img {
 }
 .info__title {
   margin-bottom: 7px;
-  color: var(--cetacean-blue)
+  color: var(--cetacean-blue);
+  text-transform: uppercase
 }
 .info__text {
   color: var(--cetacean-blue)
@@ -566,6 +567,27 @@ img {
   justify-content: flex-start;
   padding-left: 37px
 }
+@media (min-width:576px) and (-webkit-min-device-pixel-ratio:2),
+(min-width:576px) and (min-resolution:2dppx) {
+  .kinds__card--bg_1 {
+    background: url(../images/bg-card-12x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_2 {
+    background: url(../images/bg-card-22x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_3 {
+    background: url(../images/bg-card-32x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_4 {
+    background: url(../images/bg-card-42x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_5 {
+    background: url(../images/bg-card-52x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_6 {
+    background: url(../images/bg-card-62x.jpg) no-repeat center center/cover
+  }
+}
 @media only screen and (min-width:1039px) {
   .type-dog__image-product {
     transition: -webkit-transform .3s ease;
@@ -577,6 +599,12 @@ img {
     transform: translateY(20px) scale(1.1)
   }
 }
+@media (min-width:1040px) and (-webkit-min-device-pixel-ratio:2),
+(min-width:1040px) and (min-resolution:2dppx) {
+  .about__bg {
+    background: url(../images/about-bg2x.jpg) no-repeat center center/cover
+  }
+}
 @media only screen and (min-width:1040px) {
   .kinds__item {
     transition: -webkit-transform .2s ease;
@@ -586,6 +614,12 @@ img {
   .kinds__item:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05)
+  }
+}
+@media (min-width:1390px) and (-webkit-min-device-pixel-ratio:2),
+(min-width:1390px) and (min-resolution:2dppx) {
+  .skills {
+    background: url(../images/bg-skills2x.png) no-repeat bottom -20px left/848px 743px
   }
 }
 @media only screen and (min-width:1920px) {
@@ -662,7 +696,7 @@ img {
     --size: 32px
   }
   .skills {
-    background: url(../images/bg-skills.png) no-repeat bottom 35px left -100px/768px 657px;
+    background: url(../images/bg-skills.png) no-repeat bottom 15px left -100px/768px 657px;
     padding: 29px 0 12px
   }
   .skills__list {
@@ -725,6 +759,15 @@ img {
   .kinds__list {
     grid-template-columns: repeat(2,1fr);
     gap: 24px
+  }
+}
+@media only screen and (max-width:1039px) and (-webkit-min-device-pixel-ratio:2),
+only screen and (max-width:1039px) and (min-resolution:2dppx) {
+  .about__bg {
+    background: url(../images/about-bg-tablet2x.jpg) no-repeat bottom center/cover
+  }
+  .skills {
+    background: url(../images/bg-skills2x.png) no-repeat bottom 15px left -100px/768px 657px
   }
 }
 @media only screen and (max-width:767px) {
@@ -829,7 +872,7 @@ img {
     display: none
   }
   .info__image {
-    margin-top: -50px;
+    margin-top: -30px;
     margin-left: -20px
   }
   .type-dog__list {
@@ -896,8 +939,61 @@ img {
     padding-left: unset
   }
 }
+@media only screen and (max-width:767px) and (-webkit-min-device-pixel-ratio:2),
+only screen and (max-width:767px) and (min-resolution:2dppx) {
+  .skills {
+    background: url(../images/bg-skills-mobile2x.png) no-repeat bottom -37px left/320px 358px
+  }
+}
+@media only screen and (max-width:575px) {
+  .kinds__card--bg_1 {
+    background: url(../images/bg-card-1-mobile.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_2 {
+    background: url(../images/bg-card-2-mobile.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_3 {
+    background: url(../images/bg-card-3-mobile.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_4 {
+    background: url(../images/bg-card-4-mobile.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_5 {
+    background: url(../images/bg-card-5-mobile.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_6 {
+    background: url(../images/bg-card-6-mobile.jpg) no-repeat center center/cover
+  }
+}
+@media only screen and (max-width:575px) and (-webkit-min-device-pixel-ratio:2),
+only screen and (max-width:575px) and (min-resolution:2dppx) {
+  .kinds__card--bg_1 {
+    background: url(../images/bg-card-1-mobile2x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_2 {
+    background: url(../images/bg-card-2-mobile2x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_3 {
+    background: url(../images/bg-card-3-mobile2x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_4 {
+    background: url(../images/bg-card-4-mobile2x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_5 {
+    background: url(../images/bg-card-5-mobile2x.jpg) no-repeat center center/cover
+  }
+  .kinds__card--bg_6 {
+    background: url(../images/bg-card-6-mobile2x.jpg) no-repeat center center/cover
+  }
+}
 @media only screen and (max-width:419px) {
   .about__bg {
     background: url(../images/about-bg-mobile.jpg) no-repeat center center/cover
+  }
+}
+@media only screen and (max-width:419px) and (-webkit-min-device-pixel-ratio:2),
+only screen and (max-width:419px) and (min-resolution:2dppx) {
+  .about__bg {
+    background: url(../images/about-bg-mobile2x.jpg) no-repeat center center/cover
   }
 }
