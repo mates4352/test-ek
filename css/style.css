@@ -193,7 +193,8 @@ img {
   padding: 0 var(--wrapper-padding)
 }
 .about {
-  position: relative
+  position: relative;
+  z-index: 100
 }
 .about__bg {
   height: 423px;
@@ -253,8 +254,17 @@ img {
   background-color: var(--magenta)
 }
 .diet {
+  position: relative;
   padding: 215px 0 60px;
   background: url(../images/shared-bg.png) no-repeat center center/cover
+}
+.diet__gradient {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg,rgba(244,244,244,.2) 0,rgba(244,244,244,.8) 50%,rgba(244,244,244,.2) 100%)
 }
 .diet__wrap {
   display: grid;
@@ -296,8 +306,18 @@ img {
   height: auto
 }
 .skills {
+  position: relative;
   padding: 45px 0;
-  background: url(../images/bg-skills.png) no-repeat bottom 45px left/777px 682px
+  background: url(../images/bg-skills.png) no-repeat bottom -20px left/848px 743px
+}
+.skills__gradient {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg,rgba(244,244,244,0) 0,rgba(244,244,244,.8) 50%,rgba(244,244,244,.1) 100%)
 }
 .skills__list {
   display: grid;
@@ -344,7 +364,16 @@ img {
   background-color: var(--white)
 }
 .info {
+  position: relative;
   background: url(../images/shared-bg.png) no-repeat center center/cover
+}
+.info__gradient {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg,rgba(244,244,244,.1) 0,rgba(244,244,244,.7) 50%,rgba(244,244,244,.2) 100%)
 }
 .info__wrap {
   display: grid;
@@ -401,15 +430,15 @@ img {
   transform: translateY(23px)
 }
 .type-dog__image-product--small {
-  -webkit-transform: translate(-10px,20px);
-  transform: translate(-10px,20px)
+  -webkit-transform: translate(-10px,21px);
+  transform: translate(-10px,21px)
 }
 .type-dog__image-dog {
   position: absolute
 }
 .type-dog__image-dog--big {
   top: 0;
-  right: 0
+  right: -25px
 }
 .type-dog__image-dog--small {
   top: 0;
@@ -633,7 +662,7 @@ img {
     --size: 32px
   }
   .skills {
-    background: url(../images/bg-skills-tablet.png) no-repeat bottom 35px left/586px 583px;
+    background: url(../images/bg-skills.png) no-repeat bottom 35px left -100px/768px 657px;
     padding: 29px 0 12px
   }
   .skills__list {
@@ -750,6 +779,9 @@ img {
   .diet {
     padding: 45px 0 24px
   }
+  .diet__gradient {
+    background: linear-gradient(180deg,rgba(244,244,244,.1) 0,rgba(244,244,244,.8) 50%,rgba(244,244,244,.1) 100%)
+  }
   .diet__wrap {
     grid-template-columns: 1fr;
     row-gap: 32px
@@ -758,8 +790,11 @@ img {
     padding-right: 30px
   }
   .skills {
-    background: url(../images/bg-skills-tablet.png) no-repeat bottom left/365px 330px;
-    padding-bottom: 360px
+    background: url(../images/bg-skills-mobile.png) no-repeat bottom -37px left/320px 358px;
+    padding-bottom: 320px
+  }
+  .skills__gradient {
+    background: linear-gradient(180deg,rgba(244,244,244,0) 0,rgba(244,244,244,.8) 50%,rgba(244,244,244,.1) 100%)
   }
   .skills__list {
     row-gap: 26px;
@@ -780,6 +815,9 @@ img {
     max-width: 320px;
     padding: 20px;
     margin-right: 15px
+  }
+  .info__gradient {
+    background: linear-gradient(180deg,rgba(244,244,244,.1) 0,rgba(244,244,244,.7) 50%,rgba(244,244,244,.1) 100%)
   }
   .info {
     padding: 40px 0 0
@@ -809,7 +847,7 @@ img {
   .type-dog__image-product--small {
     -webkit-transform: translate(-10px,30px);
     transform: translate(-10px,30px);
-    width: 153px;
+    width: 175px;
     padding-bottom: 30px
   }
   .type-dog__image-dog--big {
@@ -819,7 +857,7 @@ img {
     height: 173px
   }
   .type-dog__image-dog--small {
-    left: 125px;
+    left: 145px;
     right: unset;
     height: 188px
   }
